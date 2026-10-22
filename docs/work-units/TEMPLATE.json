@@ -1,0 +1,21 @@
+{
+  "id": "REPLACE",
+  "goal": "REPLACE: one sentence, observable outcome",
+  "owner": "implementer",
+  "baseline_sha": "FREEZE_AT_ADMISSION",
+  "allowed_files": [],
+  "acceptance_owner": "supervisor",
+  "acceptance_artifacts": [],
+  "acceptance_criteria": [],
+  "approved_validation_command": [],
+  "full_regression_command": ["REPLACE"],
+  "attempt_limit": 3,
+  "dependencies": [],
+  "evidence_output": "evidence/<unit>/",
+  "escalation_conditions": [
+    "Irreversible/costly action, credentials/user-only information or meaningful product fork",
+    "Attempt limit exhausted or scope/acceptance change required"
+  ],
+  "failure_asset": "Link regression/scenario/ADR/limitation/runbook/evidence fixture",
+  "freeze": "Supervisor commits acceptance and records hashes before implementation; acceptance excluded from allowed_files"
+}

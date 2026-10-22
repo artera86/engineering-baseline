@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "project": "REPLACE",
+  "updated_date": "YYYY-MM-DD",
+  "milestone": "REPLACE: one sentence on what is currently accepted",
+  "critical_path": "REPLACE: the single thing that most limits progress",
+  "verified_baseline": {
+    "sha": "REPLACE_AFTER_FIRST_GREEN_RUN",
+    "tests_passed": 0,
+    "evidence": "evidence/<unit>/regression.txt"
+  },
+  "queues": {
+    "ACTIVE": [],
+    "READY": [],
+    "BLOCKED": [],
+    "DEFERRED": []
+  },
+  "known_limitations": [],
+  "claim_boundary": {
+    "established": [],
+    "not_established": [],
+    "scope": "REPLACE: what the evidence does and does not cover"
+  },
+  "recent_decisions": [
+    "docs/adr/001-engineering-control-plane.md"
+  ],
+  "resource_policy": {
+    "routing": "Deterministic tools first; implementer does routine work; supervisor integrates and reviews; tests/validators accept",
+    "metered_resources": "Admit only below the threshold in docs/resource-policy.md; unknown or stale means blocked",
+    "paid_external": "Unknown until the Product Owner records a budget; nothing is authorized by this setup"
+  },
+  "next_checkpoint": "REPLACE",
+  "operating_agreement": "docs/engineering.md",
+  "last_completed": {
+    "id": "NONE",
+    "evidence": ""
+  }
+}

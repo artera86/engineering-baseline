@@ -1,0 +1,25 @@
+{
+  "id": "EXAMPLE",
+  "goal": "Add parse_duration() that converts '1h30m' style strings to seconds.",
+  "owner": "implementer",
+  "baseline_sha": "FREEZE_AT_ADMISSION",
+  "allowed_files": ["src/durations.py"],
+  "acceptance_owner": "supervisor",
+  "acceptance_artifacts": ["acceptance/test_durations.py"],
+  "acceptance_criteria": [
+    "parse_duration('1h30m') == 5400 and parse_duration('45s') == 45.",
+    "Empty, negative, or malformed input raises ValueError (never returns 0).",
+    "No network, filesystem or environment access."
+  ],
+  "approved_validation_command": ["python", "-m", "pytest", "-q", "acceptance/test_durations.py"],
+  "full_regression_command": ["python", "-m", "pytest", "-q"],
+  "attempt_limit": 3,
+  "dependencies": [],
+  "evidence_output": "evidence/EXAMPLE/",
+  "escalation_conditions": [
+    "Irreversible/costly action, credentials/user-only information or meaningful product fork",
+    "Attempt limit exhausted or scope/acceptance change required"
+  ],
+  "failure_asset": "Regression test for any defect found",
+  "freeze": "Supervisor commits acceptance and records hashes before implementation; acceptance excluded from allowed_files"
+}
